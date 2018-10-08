@@ -356,6 +356,7 @@ public class Specs {
 		["-"],
 		["item %d.listItem of %m.list",						"r", 12, "getLine:ofList:"],
 		["length of %m.list",								"r", 12, "lineCountOfList:"],
+		["connect %m.list by %s",								"r", 13, "getList:with:"],
 		["%m.list contains %s?",								"b", 12, "list:contains:"],
 		["-"],
 		["show list %m.list",								" ", 12, "showList:"],

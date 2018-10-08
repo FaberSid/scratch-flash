@@ -343,6 +343,7 @@ public class ScratchObj extends Sprite {
 		if ('setLine:ofList:to:' == op) return [1, defaultListName(), 'thing'];
 		if ('getLine:ofList:' == op) return [1, defaultListName()];
 		if ('lineCountOfList:' == op) return [defaultListName()];
+		if ('getList:with:' == op) return [defaultListName(), ','];
 		if ('list:contains:' == op) return [defaultListName(), 'thing'];
 		if ('showList:' == op) return [defaultListName()];
 		if ('hideList:' == op) return [defaultListName()];

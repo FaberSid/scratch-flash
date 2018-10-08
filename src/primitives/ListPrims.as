@@ -47,6 +47,7 @@ public class ListPrims {
 		primTable['setLine:ofList:to:']	= primReplace;
 		primTable['getLine:ofList:']	= primGetItem;
 		primTable['lineCountOfList:']	= primLength;
+		primTable['getList:with:'] = primListWith;
 		primTable['list:contains:']		= primContains;
 	}
 
@@ -145,6 +146,12 @@ public class ListPrims {
 		var list:ListWatcher = listarg(b, 0);
 		if (!list) return 0;
 		return list.contents.length;
+	}
+
+	private function primListWith(b:Block):String {
+		var list:ListWatcher = listarg(b, 0);
+		if (!list) return '';
+		return list.contents.join( interp.arg(b, 1) || '' );
 	}
 
 	private function primContains(b:Block):Boolean {
