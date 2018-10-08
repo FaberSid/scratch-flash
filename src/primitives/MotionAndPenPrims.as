@@ -75,6 +75,11 @@ public class MotionAndPenPrims {
 		primTable["penSize:"]			= primSetPenSize;
 		primTable["changePenSizeBy:"]	= primChangePenSize;
 		primTable["stampCostume"]		= primStamp;
+
+		primTable["getPenHue"] = function():* { return interp.targetSprite().penHue };
+		primTable["getPenShade"] = function():* { return interp.targetSprite().penShade };
+		primTable["getPenSize"] = function():* { return interp.targetSprite().penWidth };
+		primTable["getPenState"] = function():* { return interp.targetSprite().penIsDown };
 	}
 
 	private function primMove(b:Block):void {

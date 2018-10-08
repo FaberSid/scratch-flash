@@ -214,6 +214,11 @@ public class Specs {
 		["change pen size by %n",				" ", 4, "changePenSizeBy:",		1],
 		["set pen size to %n",					" ", 4, "penSize:", 			1],
 		["-"],
+		["pen color",										"r", 13, "getPenHue"],
+		["pen shade",										"r", 13, "getPenShade"],
+		["pen size",										"r", 13, "getPenSize"],
+		["-"],
+		["is pen down?",								"b", 13, "getPenState"],
 
 		// stage pen
 		["clear",								" ", 104, "clearPenTrails"],
