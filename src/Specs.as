@@ -72,6 +72,7 @@ public class Specs {
 		[10, "More Blocks",	procedureColor],
 		[11, "Parameter",	parameterColor],
 		[12, "List",		listColor],
+		[13, "MOD ONLY",	undefinedColor],
 		[20, "Extension",	extensionsColor],
 	];
 
