@@ -1,3 +1,8 @@
+## Forkした人からのお知らせ
+
+このscratch-flashはForkした人の都合で改変されています。
+それに伴い参考元へリンクされている場合があります。
+
 ## Scratch 2.0 editor and player [![Build Status](https://api.travis-ci.org/LLK/scratch-flash.svg?branch=master)](https://travis-ci.org/LLK/scratch-flash)
 
 #### Note: Scratch 2.0 is now in maintenance mode while the team focuses efforts on [Scratch 3.0](https://scratch.mit.edu/developers). While critical issues will be addressed please note that any feature requests or minor issues will not be reviewed until the next major release.
