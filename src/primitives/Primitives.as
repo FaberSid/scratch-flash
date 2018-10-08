@@ -32,7 +32,7 @@ package primitives {
 
 public class Primitives {
 
-	private const MaxCloneCount:int = 300;
+	private const MaxCloneCount:int = 400;
 
 	protected var app:Scratch;
 	protected var interp:Interpreter;
