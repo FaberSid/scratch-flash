@@ -67,6 +67,8 @@ public class Primitives {
 		primTable["rounded"]			= function(b:*):* { return Math.round(interp.numarg(b, 0)) };
 		primTable["computeFunction:of:"] = primMathFunction;
 
+		primTable["ifThenString"] = function(b:*):*{return ""+(interp.arg(b,0)?interp.arg(b,1):interp.arg(b,2))};
+
 		// clone
 		primTable["createCloneOf"]		= primCreateCloneOf;
 		primTable["deleteClone"]		= primDeleteClone;

@@ -345,6 +345,7 @@ public class Specs {
 		["round %n",							"r", 8, "rounded", 				""],
 		["-"],
 		["%m.mathOp of %n",						"r", 8, "computeFunction:of:",	"sqrt", 9],
+		["if %n then %s else %s",               "r", 13, "ifThenString",         "",""],
 
 		// variables
 		["set %m.var to %s",								" ", 9, SET_VAR],
