@@ -48,6 +48,7 @@ public class ListPrims {
 		primTable['getLine:ofList:']	= primGetItem;
 		primTable['lineCountOfList:']	= primLength;
 		primTable['getList:with:'] = primListWith;
+		primTable['swap:listItem:'] = primSwap;
 		primTable['list:contains:']		= primContains;
 	}
 
@@ -190,4 +191,25 @@ public class ListPrims {
 		return i;
 	}
 
+	private function primSwap(b:Block){
+		var list1:ListWatcher = listarg(b, 0);//1
+		if (!list1) return '';
+		var i1:int = computeIndex(interp.arg(b, 1), list1.contents.length);
+		if (i1 < 0) return '';
+		if (list1.visible) list1.updateWatcher(i1, true, interp);
+		var tmp1=list1.contents[i1 - 1];
+
+		var list2:ListWatcher = listarg(b, 2);//2
+		if (!list2) return '';
+		var i2:int = computeIndex(interp.arg(b, 3), list2.contents.length);
+		if (i2 < 0) return '';
+		if (list2.visible) list2.updateWatcher(i2, true, interp);
+		var tmp2=list2.contents[i2 - 1];
+
+		listReplace(list1, i1, tmp2);//3
+		if (list1.visible) list1.updateWatcher(i1, false, interp);
+
+		listReplace(list2, i2, tmp1);//4
+		if (list2.visible) list2.updateWatcher(i2, false, interp);
+	}
 }}

@@ -367,6 +367,7 @@ public class Specs {
 		["-"],
 		["show list %m.list",								" ", 12, "showList:"],
 		["hide list %m.list",								" ", 12, "hideList:"],
+		["Swap %m.list%d.listItem and %m.list%d.listItem",	" ", 13, "swap:listItem:"],
 
 		// obsolete blocks from Scratch 1.4 that may be used in older projects
 		["play drum %n for %n beats",			" ", 98, "drum:duration:elapsed:from:", 1, 0.25], // Scratch 1.4 MIDI drum
