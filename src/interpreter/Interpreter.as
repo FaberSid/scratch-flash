@@ -459,6 +459,8 @@ public class Interpreter {
 	private function initPrims():void {
 		primTable = new Dictionary();
 		// control
+		primTable["isTurboMode"]		= function(b:*):*{return turboMode};
+		primTable["setTurboMode"]		= function(b:*):*{turboMode = ('on' == arg(b,0));app.refreshScreen();};
 		primTable["whenGreenFlag"]		= primNoop;
 		primTable["whenKeyPressed"]		= primNoop;
 		primTable["whenClicked"]		= primNoop;

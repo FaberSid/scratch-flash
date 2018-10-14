@@ -267,6 +267,8 @@ public class Specs {
 		["stop %m.stop",						"f", 106, "stopScripts", "all"],
 		["-"],
 		["create clone of %m.spriteOnly",		" ", 106, "createCloneOf"],
+		["turbo mode?",                         "b", 13, "isTurboMode"],
+		["set turbo mode to %m.onOff",          " ", 13, "setTurboMode","on"],
 
 		// sensing
 		["touching %m.touching?",				"b", 7, "touching:",			"_mouse_"],

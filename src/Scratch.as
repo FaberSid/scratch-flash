@@ -1249,6 +1249,10 @@ public class Scratch extends Sprite {
 		stagePart.refresh();
 	}
 
+	public function refreshScreen():void {
+		stagePart.refresh();
+	}
+
 	public function handleTool(tool:String, evt:MouseEvent):void {
 	}
 

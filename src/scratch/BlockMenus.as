@@ -101,6 +101,7 @@ public class BlockMenus implements DragClient {
 		if (menuName == 'var') menuHandler.varMenu(evt);
 		if (menuName == 'videoMotionType') menuHandler.videoMotionTypeMenu(evt);
 		if (menuName == 'videoState') menuHandler.videoStateMenu(evt);
+		if (menuName == 'onOff') menuHandler.onOffMenu(evt);
 	}
 
 	public static function strings():Array {
@@ -126,6 +127,7 @@ public class BlockMenus implements DragClient {
 			handler.listItem(evt, false);
 			handler.mathOpMenu(evt);
 			handler.motorDirectionMenu(evt);
+			handler.onOffMenu(evt);
 			handler.procMenu(evt);
 			handler.rotationStyleMenu(evt);
 //			handler.scrollAlignMenu(evt);
@@ -508,6 +510,13 @@ public class BlockMenus implements DragClient {
 		m.addItem('off');
 		m.addItem('on');
 		m.addItem('on-flipped');
+		showMenu(m);
+	}
+
+	private function onOffMenu(evt:MouseEvent):void{
+		var m:Menu = new Menu(setBlockArg,'onOff');
+		m.addItem('off');
+		m.addItem('on');
 		showMenu(m);
 	}
 
